@@ -33,7 +33,11 @@ impl std::str::FromStr for Strategy {
 
 impl fmt::Display for Strategy {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "{}", self)
+        match self {
+            Strategy::Stay => write!(f,"Stay"),
+            Strategy::Switch => write!(f,"Switch"),
+            Strategy::Both => write!(f,"Both"),
+        }
     }
 }
 
@@ -61,9 +65,8 @@ fn main() {
     let mut rng = rand::thread_rng();
     let doors = Uniform::from(0..3);
     let cardoor = doors.sample(&mut rng);
-//    println!("{}", runiters);
 //    println!("{:?}", cliarg);
-    println!("{}", runiters);
-    println!("{}", runstrat);
-    println!("{}", cardoor);
+    println!("Iterations to run - {}", runiters);
+    println!("Strategy in use - {}", runstrat);
+    println!("Winning Door - {}", cardoor);
 }
