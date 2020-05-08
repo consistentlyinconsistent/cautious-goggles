@@ -65,7 +65,6 @@ fn main() {
     let mut rng = rand::thread_rng();
     let doors = Uniform::from(0..3);
     let cardoor = doors.sample(&mut rng);
-//    println!("{:?}", cliarg);
     println!("Iterations to run - {}", runiters);
     println!("Strategy in use - {}", runstrat);
     println!("Winning Door - {}", cardoor);
