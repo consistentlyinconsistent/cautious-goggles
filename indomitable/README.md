@@ -4,11 +4,13 @@ Testing TCP latency between 2 endpoints. For the sake of this project, the 2 end
 Upon reaching the webpage, the client will be offered a few options, populated by reasonable defaults. In effect, it will be akin to a web-based TCP Ping. 
 
 ## Existing Python3 CLI Code:
-TBD
+[Now on Github](https://github.com/consistentlyinconsistent/cautious-goggles/blob/master/indomitable/python3/my_tcp_latency.py)
 
 ## Possibly Helpful Links:
 [Compiling from Rust to WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm)
+
 [Wasm By Example](https://wasmbyexample.dev/examples/hello-world/hello-world.rust.en-us.html)
+
 [A Rust Introduction to WebAssembly](https://www.telerik.com/blogs/rust-introduction-to-webassembly)
 
 ## Justification
